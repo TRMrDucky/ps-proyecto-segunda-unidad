@@ -18,3 +18,7 @@ Count by class
     [Arguments]     ${class}
     ${resultado}=    Get Element Count    xpath://button[@class='${class}']
     RETURN    ${resultado}
+
+Recargar pagina
+    ${url_actual}=    Get Location
+    Go To    ${url_actual}

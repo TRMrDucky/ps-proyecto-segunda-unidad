@@ -4,8 +4,6 @@ Resource    ../Data/Variables.robot
 Resource    ../Resources/Keywords.robot
 
 *** Test Cases ***
-
-*** Test Cases ***
 #Add / Delete elements
 Add / delete elements
     Open Browser    ${URL-TODO}    ${BROWSER}
@@ -34,11 +32,13 @@ Add / delete elements
 Basic auth con credenciales validas
     Open Browser    https://${VALID-USER}:${VALID-PSW}@${URL-BASIC-AUTH}    ${BROWSER}
     Page Should Contain    Congratulations
+
     [Teardown]    Close Browser
 
 Basic auth con credenciales invalidas
     Open Browser    https://${INVALID-USER}:${INVALID-PSW}@${URL-BASIC-AUTH}    ${BROWSER}
     Page Should not Contain    Congratulations
+
     [Teardown]    Close Browser
 
 
@@ -52,3 +52,36 @@ Select checkboxes
     Select Checkbox    xpath://form[@id='checkboxes']/input[2]
     Checkbox Should Be Selected    xpath://form[@id='checkboxes']/input[2]
 
+    [Teardown]    Close Browser
+
+
+#Context menu
+Context menu
+    Open Browser    ${URL-CONTEXT-MENU}    ${BROWSER}
+
+    Open Context Menu    id:hot-spot
+    Alert Should Be Present    You selected a context menu
+
+    Alert Should Not Be Present
+
+    [Teardown]    Close Browser
+
+
+# Disappearing elements
+Disappearing elements
+    Open Browser    ${URL-DISAPPEARING-ELEMENTS}    ${BROWSER}
+
+    WHILE    ${TRUE}
+         ${galery}=    Run Keyword And Return Status    Page Should Contain Element    xpath://a[text()='Gallery']
+
+         IF    ${galery}
+            BREAK
+         ELSE
+            Reload Page
+            Sleep    0.5s
+         END
+    END
+
+    Element Should Be Visible    xpath://a[text()='Gallery']
+
+    [Teardown]    Close Browser
