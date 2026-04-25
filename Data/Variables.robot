@@ -1,3 +1,5 @@
+*** VARIABLES ***
+${BROWSER}      chrome
 ${URL-TODO}     https://the-internet.herokuapp.com/add_remove_elements/
 ${URL-BASIC-AUTH}      https://the-internet.herokuapp.com/basic_auth
 ${URL-CHECKBOXES}       https://the-internet.herokuapp.com/checkboxes
