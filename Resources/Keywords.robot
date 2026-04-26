@@ -22,3 +22,19 @@ Count by class
 Recargar pagina
     ${url_actual}=    Get Location
     Go To    ${url_actual}
+
+Validar texto visible
+    [Arguments]     ${texto}
+    Page Should Contain    ${texto}
+
+Validar elemento no visible
+    [Arguments]     ${locator}
+    Wait Until Element Is Not Visible    ${locator}    timeout=10s
+
+Validar elemento habilitado
+    [Arguments]     ${locator}
+    Element Should Be Enabled    ${locator}
+
+Presionar tecla
+    [Arguments]     ${key}
+    Press Keys    id:target    ${key}
