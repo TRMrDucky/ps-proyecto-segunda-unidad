@@ -1,1236 +1,1517 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-04-25T17:30:30.869020" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-04-26T13:39:38.293938" rpa="false" schemaversion="5">
 <suite id="s1" name="Pruebas" source="C:\Users\Gamer\Documents\GitHub\pruebas_software\ps-proyecto-segunda-unidad\Tests\pruebas.robot">
 <test id="s1-t1" name="Add / delete elements" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:31.066493" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
+<msg time="2026-04-26T13:39:38.558829" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
 <arg>${URL-TODO}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:31.066192" elapsed="1.648550"/>
+<status status="PASS" start="2026-04-26T13:39:38.558233" elapsed="3.446153"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.716292" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.006470" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.715967" elapsed="0.052793"/>
+<status status="PASS" start="2026-04-26T13:39:42.005996" elapsed="0.056337"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.715620" elapsed="0.053296"/>
+<status status="PASS" start="2026-04-26T13:39:42.005517" elapsed="0.056960"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.776564" level="INFO">${resultado} = 1</msg>
+<msg time="2026-04-26T13:39:42.069378" level="INFO">${resultado} = 1</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.769441" elapsed="0.007172"/>
+<status status="PASS" start="2026-04-26T13:39:42.063221" elapsed="0.006189"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.776707" elapsed="0.000071"/>
+<status status="PASS" start="2026-04-26T13:39:42.069474" elapsed="0.000061"/>
 </return>
-<msg time="2026-04-25T17:30:32.776925" level="INFO">${cantidad} = 1</msg>
+<msg time="2026-04-26T13:39:42.069661" level="INFO">${cantidad} = 1</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.769151" elapsed="0.007796"/>
+<status status="PASS" start="2026-04-26T13:39:42.062942" elapsed="0.006740"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.777074" elapsed="0.000336"/>
+<status status="PASS" start="2026-04-26T13:39:42.069785" elapsed="0.000306"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-25T17:30:32.715410" elapsed="0.062043"/>
+<status status="PASS" start="2026-04-26T13:39:42.005258" elapsed="0.064874"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.778101" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.070763" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.777921" elapsed="0.035116"/>
+<status status="PASS" start="2026-04-26T13:39:42.070574" elapsed="0.036589"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.777684" elapsed="0.035473"/>
+<status status="PASS" start="2026-04-26T13:39:42.070336" elapsed="0.036972"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.817509" level="INFO">${resultado} = 2</msg>
+<msg time="2026-04-26T13:39:42.112302" level="INFO">${resultado} = 2</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.813637" elapsed="0.003904"/>
+<status status="PASS" start="2026-04-26T13:39:42.107883" elapsed="0.004462"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.817601" elapsed="0.000052"/>
+<status status="PASS" start="2026-04-26T13:39:42.112428" elapsed="0.000073"/>
 </return>
-<msg time="2026-04-25T17:30:32.817798" level="INFO">${cantidad} = 2</msg>
+<msg time="2026-04-26T13:39:42.112653" level="INFO">${cantidad} = 2</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.813360" elapsed="0.004460"/>
+<status status="PASS" start="2026-04-26T13:39:42.107555" elapsed="0.005126"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.817925" elapsed="0.000299"/>
+<status status="PASS" start="2026-04-26T13:39:42.112806" elapsed="0.000351"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-25T17:30:32.777572" elapsed="0.040692"/>
+<status status="PASS" start="2026-04-26T13:39:42.070239" elapsed="0.042972"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.818808" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.113864" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.818665" elapsed="0.032448"/>
+<status status="PASS" start="2026-04-26T13:39:42.113691" elapsed="0.033784"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.818470" elapsed="0.032775"/>
+<status status="PASS" start="2026-04-26T13:39:42.113460" elapsed="0.034140"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.855660" level="INFO">${resultado} = 3</msg>
+<msg time="2026-04-26T13:39:42.152040" level="INFO">${resultado} = 3</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.851726" elapsed="0.003965"/>
+<status status="PASS" start="2026-04-26T13:39:42.148080" elapsed="0.003997"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.855751" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:39:42.152143" elapsed="0.000045"/>
 </return>
-<msg time="2026-04-25T17:30:32.855909" level="INFO">${cantidad} = 3</msg>
+<msg time="2026-04-26T13:39:42.152304" level="INFO">${cantidad} = 3</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.851452" elapsed="0.004479"/>
+<status status="PASS" start="2026-04-26T13:39:42.147801" elapsed="0.004525"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.856031" elapsed="0.000284"/>
+<status status="PASS" start="2026-04-26T13:39:42.152446" elapsed="0.000290"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-25T17:30:32.818367" elapsed="0.037987"/>
+<status status="PASS" start="2026-04-26T13:39:42.113340" elapsed="0.039436"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.857006" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.153374" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.856750" elapsed="0.033138"/>
+<status status="PASS" start="2026-04-26T13:39:42.153194" elapsed="0.033976"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.856554" elapsed="0.033452"/>
+<status status="PASS" start="2026-04-26T13:39:42.152968" elapsed="0.034351"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.895195" level="INFO">${resultado} = 4</msg>
+<msg time="2026-04-26T13:39:42.192862" level="INFO">${resultado} = 4</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.890643" elapsed="0.004595"/>
+<status status="PASS" start="2026-04-26T13:39:42.187892" elapsed="0.005029"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.895318" elapsed="0.000048"/>
+<status status="PASS" start="2026-04-26T13:39:42.193032" elapsed="0.000065"/>
 </return>
-<msg time="2026-04-25T17:30:32.895492" level="INFO">${cantidad} = 4</msg>
+<msg time="2026-04-26T13:39:42.193257" level="INFO">${cantidad} = 4</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.890304" elapsed="0.005210"/>
+<status status="PASS" start="2026-04-26T13:39:42.187559" elapsed="0.005729"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.895631" elapsed="0.000291"/>
+<status status="PASS" start="2026-04-26T13:39:42.193444" elapsed="0.000396"/>
 </kw>
 <var name="${i}">4</var>
-<status status="PASS" start="2026-04-25T17:30:32.856455" elapsed="0.039506"/>
+<status status="PASS" start="2026-04-26T13:39:42.152873" elapsed="0.041021"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.896527" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.194640" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.896377" elapsed="0.032142"/>
+<status status="PASS" start="2026-04-26T13:39:42.194451" elapsed="0.032398"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.896177" elapsed="0.032459"/>
+<status status="PASS" start="2026-04-26T13:39:42.194186" elapsed="0.032800"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.933247" level="INFO">${resultado} = 5</msg>
+<msg time="2026-04-26T13:39:42.231895" level="INFO">${resultado} = 5</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.929103" elapsed="0.004175"/>
+<status status="PASS" start="2026-04-26T13:39:42.227542" elapsed="0.004390"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.933337" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:39:42.232004" elapsed="0.000056"/>
 </return>
-<msg time="2026-04-25T17:30:32.933492" level="INFO">${cantidad} = 5</msg>
+<msg time="2026-04-26T13:39:42.232206" level="INFO">${cantidad} = 5</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.928832" elapsed="0.004712"/>
+<status status="PASS" start="2026-04-26T13:39:42.227234" elapsed="0.005030"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.933647" elapsed="0.000283"/>
+<status status="PASS" start="2026-04-26T13:39:42.232392" elapsed="0.000354"/>
 </kw>
 <var name="${i}">5</var>
-<status status="PASS" start="2026-04-25T17:30:32.896060" elapsed="0.037909"/>
+<status status="PASS" start="2026-04-26T13:39:42.194034" elapsed="0.038765"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.934498" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.233484" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.934358" elapsed="0.031814"/>
+<status status="PASS" start="2026-04-26T13:39:42.233294" elapsed="0.039060"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.934169" elapsed="0.032121"/>
+<status status="PASS" start="2026-04-26T13:39:42.233054" elapsed="0.039425"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.970787" level="INFO">${resultado} = 6</msg>
+<msg time="2026-04-26T13:39:42.277415" level="INFO">${resultado} = 6</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.966772" elapsed="0.004046"/>
+<status status="PASS" start="2026-04-26T13:39:42.272977" elapsed="0.004473"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:32.970878" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:39:42.277514" elapsed="0.000046"/>
 </return>
-<msg time="2026-04-25T17:30:32.971040" level="INFO">${cantidad} = 6</msg>
+<msg time="2026-04-26T13:39:42.277680" level="INFO">${cantidad} = 6</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:32.966494" elapsed="0.004567"/>
+<status status="PASS" start="2026-04-26T13:39:42.272693" elapsed="0.005008"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.971163" elapsed="0.000276"/>
+<status status="PASS" start="2026-04-26T13:39:42.277801" elapsed="0.000277"/>
 </kw>
 <var name="${i}">6</var>
-<status status="PASS" start="2026-04-25T17:30:32.934066" elapsed="0.037413"/>
+<status status="PASS" start="2026-04-26T13:39:42.232928" elapsed="0.045190"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:32.972000" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.278644" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:32.971859" elapsed="0.034294"/>
+<status status="PASS" start="2026-04-26T13:39:42.278506" elapsed="0.030720"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:32.971673" elapsed="0.034598"/>
+<status status="PASS" start="2026-04-26T13:39:42.278318" elapsed="0.031027"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.011518" level="INFO">${resultado} = 7</msg>
+<msg time="2026-04-26T13:39:42.313877" level="INFO">${resultado} = 7</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.006736" elapsed="0.004828"/>
+<status status="PASS" start="2026-04-26T13:39:42.309811" elapsed="0.004097"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.011648" elapsed="0.000053"/>
+<status status="PASS" start="2026-04-26T13:39:42.313967" elapsed="0.000046"/>
 </return>
-<msg time="2026-04-25T17:30:33.011834" level="INFO">${cantidad} = 7</msg>
+<msg time="2026-04-26T13:39:42.314122" level="INFO">${cantidad} = 7</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.006469" elapsed="0.005387"/>
+<status status="PASS" start="2026-04-26T13:39:42.309549" elapsed="0.004593"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.011981" elapsed="0.000308"/>
+<status status="PASS" start="2026-04-26T13:39:42.314241" elapsed="0.000289"/>
 </kw>
 <var name="${i}">7</var>
-<status status="PASS" start="2026-04-25T17:30:32.971574" elapsed="0.040756"/>
+<status status="PASS" start="2026-04-26T13:39:42.278217" elapsed="0.036354"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.012897" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.315092" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.012743" elapsed="0.031787"/>
+<status status="PASS" start="2026-04-26T13:39:42.314952" elapsed="0.031758"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.012543" elapsed="0.032124"/>
+<status status="PASS" start="2026-04-26T13:39:42.314770" elapsed="0.032110"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.049239" level="INFO">${resultado} = 8</msg>
+<msg time="2026-04-26T13:39:42.352005" level="INFO">${resultado} = 8</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.045154" elapsed="0.004117"/>
+<status status="PASS" start="2026-04-26T13:39:42.347502" elapsed="0.004546"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.049332" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:39:42.352131" elapsed="0.000061"/>
 </return>
-<msg time="2026-04-25T17:30:33.049492" level="INFO">${cantidad} = 8</msg>
+<msg time="2026-04-26T13:39:42.352358" level="INFO">${cantidad} = 8</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.044881" elapsed="0.004632"/>
+<status status="PASS" start="2026-04-26T13:39:42.347148" elapsed="0.005243"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.049616" elapsed="0.000279"/>
+<status status="PASS" start="2026-04-26T13:39:42.352537" elapsed="0.000368"/>
 </kw>
 <var name="${i}">8</var>
-<status status="PASS" start="2026-04-25T17:30:33.012431" elapsed="0.037503"/>
+<status status="PASS" start="2026-04-26T13:39:42.314668" elapsed="0.038281"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.050479" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.353497" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.050339" elapsed="0.031126"/>
+<status status="PASS" start="2026-04-26T13:39:42.353353" elapsed="0.031201"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.050147" elapsed="0.031437"/>
+<status status="PASS" start="2026-04-26T13:39:42.353160" elapsed="0.031511"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.086878" level="INFO">${resultado} = 9</msg>
+<msg time="2026-04-26T13:39:42.389822" level="INFO">${resultado} = 9</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.082050" elapsed="0.004869"/>
+<status status="PASS" start="2026-04-26T13:39:42.385136" elapsed="0.004729"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.086998" elapsed="0.000051"/>
+<status status="PASS" start="2026-04-26T13:39:42.389937" elapsed="0.000048"/>
 </return>
-<msg time="2026-04-25T17:30:33.087176" level="INFO">${cantidad} = 9</msg>
+<msg time="2026-04-26T13:39:42.390111" level="INFO">${cantidad} = 9</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.081780" elapsed="0.005417"/>
+<status status="PASS" start="2026-04-26T13:39:42.384868" elapsed="0.005266"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.087314" elapsed="0.000299"/>
+<status status="PASS" start="2026-04-26T13:39:42.390251" elapsed="0.000390"/>
 </kw>
 <var name="${i}">9</var>
-<status status="PASS" start="2026-04-25T17:30:33.050033" elapsed="0.037619"/>
+<status status="PASS" start="2026-04-26T13:39:42.353054" elapsed="0.037636"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.088246" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.391278" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.088091" elapsed="0.044585"/>
+<status status="PASS" start="2026-04-26T13:39:42.391126" elapsed="0.030879"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.087888" elapsed="0.044896"/>
+<status status="PASS" start="2026-04-26T13:39:42.390917" elapsed="0.031209"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.137407" level="INFO">${resultado} = 10</msg>
+<msg time="2026-04-26T13:39:42.427086" level="INFO">${resultado} = 10</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.133212" elapsed="0.004226"/>
+<status status="PASS" start="2026-04-26T13:39:42.422639" elapsed="0.004485"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.137501" elapsed="0.000046"/>
+<status status="PASS" start="2026-04-26T13:39:42.427194" elapsed="0.000048"/>
 </return>
-<msg time="2026-04-25T17:30:33.137659" level="INFO">${cantidad} = 10</msg>
+<msg time="2026-04-26T13:39:42.427363" level="INFO">${cantidad} = 10</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.132967" elapsed="0.004712"/>
+<status status="PASS" start="2026-04-26T13:39:42.422351" elapsed="0.005034"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.137793" elapsed="0.000271"/>
+<status status="PASS" start="2026-04-26T13:39:42.427505" elapsed="0.000290"/>
 </kw>
 <var name="${i}">10</var>
-<status status="PASS" start="2026-04-25T17:30:33.087775" elapsed="0.050358"/>
+<status status="PASS" start="2026-04-26T13:39:42.390802" elapsed="0.037055"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.138664" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.428404" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.138501" elapsed="0.030873"/>
+<status status="PASS" start="2026-04-26T13:39:42.428258" elapsed="0.030404"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.138326" elapsed="0.031164"/>
+<status status="PASS" start="2026-04-26T13:39:42.428066" elapsed="0.030713"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.174539" level="INFO">${resultado} = 11</msg>
+<msg time="2026-04-26T13:39:42.463482" level="INFO">${resultado} = 11</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.169929" elapsed="0.004645"/>
+<status status="PASS" start="2026-04-26T13:39:42.459232" elapsed="0.004280"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.174643" elapsed="0.000047"/>
+<status status="PASS" start="2026-04-26T13:39:42.463571" elapsed="0.000047"/>
 </return>
-<msg time="2026-04-25T17:30:33.174808" level="INFO">${cantidad} = 11</msg>
+<msg time="2026-04-26T13:39:42.463731" level="INFO">${cantidad} = 11</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.169673" elapsed="0.005156"/>
+<status status="PASS" start="2026-04-26T13:39:42.458972" elapsed="0.004780"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.174934" elapsed="0.000279"/>
+<status status="PASS" start="2026-04-26T13:39:42.463855" elapsed="0.000278"/>
 </kw>
 <var name="${i}">11</var>
-<status status="PASS" start="2026-04-25T17:30:33.138230" elapsed="0.037024"/>
+<status status="PASS" start="2026-04-26T13:39:42.427959" elapsed="0.036214"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.175785" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.464713" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.175643" elapsed="0.030679"/>
+<status status="PASS" start="2026-04-26T13:39:42.464555" elapsed="0.030739"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.175453" elapsed="0.031021"/>
+<status status="PASS" start="2026-04-26T13:39:42.464367" elapsed="0.031046"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.211723" level="INFO">${resultado} = 12</msg>
+<msg time="2026-04-26T13:39:42.500094" level="INFO">${resultado} = 12</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.206972" elapsed="0.004794"/>
+<status status="PASS" start="2026-04-26T13:39:42.495883" elapsed="0.004242"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.211850" elapsed="0.000051"/>
+<status status="PASS" start="2026-04-26T13:39:42.500185" elapsed="0.000046"/>
 </return>
-<msg time="2026-04-25T17:30:33.212032" level="INFO">${cantidad} = 12</msg>
+<msg time="2026-04-26T13:39:42.500344" level="INFO">${cantidad} = 12</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.206685" elapsed="0.005368"/>
+<status status="PASS" start="2026-04-26T13:39:42.495621" elapsed="0.004747"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.212172" elapsed="0.000301"/>
+<status status="PASS" start="2026-04-26T13:39:42.500466" elapsed="0.000275"/>
 </kw>
 <var name="${i}">12</var>
-<status status="PASS" start="2026-04-25T17:30:33.175353" elapsed="0.037161"/>
+<status status="PASS" start="2026-04-26T13:39:42.464270" elapsed="0.036511"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.213077" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.501310" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.212923" elapsed="0.030398"/>
+<status status="PASS" start="2026-04-26T13:39:42.501166" elapsed="0.031309"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.212725" elapsed="0.030714"/>
+<status status="PASS" start="2026-04-26T13:39:42.500982" elapsed="0.031615"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.248096" level="INFO">${resultado} = 13</msg>
+<msg time="2026-04-26T13:39:42.537540" level="INFO">${resultado} = 13</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.243891" elapsed="0.004241"/>
+<status status="PASS" start="2026-04-26T13:39:42.533073" elapsed="0.004500"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.248206" elapsed="0.000052"/>
+<status status="PASS" start="2026-04-26T13:39:42.537636" elapsed="0.000048"/>
 </return>
-<msg time="2026-04-25T17:30:33.248394" level="INFO">${cantidad} = 13</msg>
+<msg time="2026-04-26T13:39:42.537800" level="INFO">${cantidad} = 13</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.243626" elapsed="0.004789"/>
+<status status="PASS" start="2026-04-26T13:39:42.532798" elapsed="0.005022"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.248515" elapsed="0.000280"/>
+<status status="PASS" start="2026-04-26T13:39:42.537925" elapsed="0.000281"/>
 </kw>
 <var name="${i}">13</var>
-<status status="PASS" start="2026-04-25T17:30:33.212616" elapsed="0.036220"/>
+<status status="PASS" start="2026-04-26T13:39:42.500880" elapsed="0.037367"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.249395" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.538973" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.249231" elapsed="0.030782"/>
+<status status="PASS" start="2026-04-26T13:39:42.538787" elapsed="0.031065"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.249038" elapsed="0.031095"/>
+<status status="PASS" start="2026-04-26T13:39:42.538505" elapsed="0.031470"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.284887" level="INFO">${resultado} = 14</msg>
+<msg time="2026-04-26T13:39:42.575390" level="INFO">${resultado} = 14</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.280555" elapsed="0.004362"/>
+<status status="PASS" start="2026-04-26T13:39:42.570454" elapsed="0.004980"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.284977" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:39:42.575509" elapsed="0.000051"/>
 </return>
-<msg time="2026-04-25T17:30:33.285135" level="INFO">${cantidad} = 14</msg>
+<msg time="2026-04-26T13:39:42.575689" level="INFO">${cantidad} = 14</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.280315" elapsed="0.004841"/>
+<status status="PASS" start="2026-04-26T13:39:42.570177" elapsed="0.005533"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.285252" elapsed="0.000268"/>
+<status status="PASS" start="2026-04-26T13:39:42.575831" elapsed="0.000303"/>
 </kw>
 <var name="${i}">14</var>
-<status status="PASS" start="2026-04-25T17:30:33.248934" elapsed="0.036625"/>
+<status status="PASS" start="2026-04-26T13:39:42.538344" elapsed="0.037830"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.286058" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.576726" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.285927" elapsed="0.032120"/>
+<status status="PASS" start="2026-04-26T13:39:42.576580" elapsed="0.030867"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.285752" elapsed="0.032419"/>
+<status status="PASS" start="2026-04-26T13:39:42.576382" elapsed="0.031183"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.323203" level="INFO">${resultado} = 15</msg>
+<msg time="2026-04-26T13:39:42.612187" level="INFO">${resultado} = 15</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.318679" elapsed="0.004556"/>
+<status status="PASS" start="2026-04-26T13:39:42.608024" elapsed="0.004195"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.323297" elapsed="0.000048"/>
+<status status="PASS" start="2026-04-26T13:39:42.612276" elapsed="0.000047"/>
 </return>
-<msg time="2026-04-25T17:30:33.323461" level="INFO">${cantidad} = 15</msg>
+<msg time="2026-04-26T13:39:42.612445" level="INFO">${cantidad} = 15</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.318373" elapsed="0.005109"/>
+<status status="PASS" start="2026-04-26T13:39:42.607762" elapsed="0.004707"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.323596" elapsed="0.000282"/>
+<status status="PASS" start="2026-04-26T13:39:42.612575" elapsed="0.000278"/>
 </kw>
 <var name="${i}">15</var>
-<status status="PASS" start="2026-04-25T17:30:33.285654" elapsed="0.038265"/>
+<status status="PASS" start="2026-04-26T13:39:42.576275" elapsed="0.036623"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.324575" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.613438" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.324421" elapsed="0.030683"/>
+<status status="PASS" start="2026-04-26T13:39:42.613298" elapsed="0.030758"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.324193" elapsed="0.031032"/>
+<status status="PASS" start="2026-04-26T13:39:42.613093" elapsed="0.031085"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.360444" level="INFO">${resultado} = 16</msg>
+<msg time="2026-04-26T13:39:42.649258" level="INFO">${resultado} = 16</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.355687" elapsed="0.004802"/>
+<status status="PASS" start="2026-04-26T13:39:42.644631" elapsed="0.004657"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.360576" elapsed="0.000052"/>
+<status status="PASS" start="2026-04-26T13:39:42.649345" elapsed="0.000046"/>
 </return>
-<msg time="2026-04-25T17:30:33.360761" level="INFO">${cantidad} = 16</msg>
+<msg time="2026-04-26T13:39:42.649521" level="INFO">${cantidad} = 16</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.355419" elapsed="0.005364"/>
+<status status="PASS" start="2026-04-26T13:39:42.644371" elapsed="0.005172"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.360904" elapsed="0.000303"/>
+<status status="PASS" start="2026-04-26T13:39:42.649643" elapsed="0.000269"/>
 </kw>
 <var name="${i}">16</var>
-<status status="PASS" start="2026-04-25T17:30:33.324086" elapsed="0.037162"/>
+<status status="PASS" start="2026-04-26T13:39:42.612996" elapsed="0.036955"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.361809" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.650466" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.361658" elapsed="0.031745"/>
+<status status="PASS" start="2026-04-26T13:39:42.650327" elapsed="0.031281"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.361458" elapsed="0.032062"/>
+<status status="PASS" start="2026-04-26T13:39:42.650149" elapsed="0.031574"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.398935" level="INFO">${resultado} = 17</msg>
+<msg time="2026-04-26T13:39:42.686424" level="INFO">${resultado} = 17</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.394061" elapsed="0.004914"/>
+<status status="PASS" start="2026-04-26T13:39:42.682208" elapsed="0.004248"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.399074" elapsed="0.000051"/>
+<status status="PASS" start="2026-04-26T13:39:42.686516" elapsed="0.000045"/>
 </return>
-<msg time="2026-04-25T17:30:33.399260" level="INFO">${cantidad} = 17</msg>
+<msg time="2026-04-26T13:39:42.686672" level="INFO">${cantidad} = 17</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.393767" elapsed="0.005515"/>
+<status status="PASS" start="2026-04-26T13:39:42.681918" elapsed="0.004783"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.399402" elapsed="0.000301"/>
+<status status="PASS" start="2026-04-26T13:39:42.686872" elapsed="0.000291"/>
 </kw>
 <var name="${i}">17</var>
-<status status="PASS" start="2026-04-25T17:30:33.361349" elapsed="0.038394"/>
+<status status="PASS" start="2026-04-26T13:39:42.650047" elapsed="0.037158"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.400386" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.687734" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.400218" elapsed="0.032803"/>
+<status status="PASS" start="2026-04-26T13:39:42.687587" elapsed="0.034216"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.399987" elapsed="0.033150"/>
+<status status="PASS" start="2026-04-26T13:39:42.687402" elapsed="0.034573"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.437953" level="INFO">${resultado} = 18</msg>
+<msg time="2026-04-26T13:39:42.727515" level="INFO">${resultado} = 18</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.433594" elapsed="0.004390"/>
+<status status="PASS" start="2026-04-26T13:39:42.722530" elapsed="0.005020"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.438043" elapsed="0.000044"/>
+<status status="PASS" start="2026-04-26T13:39:42.727619" elapsed="0.000046"/>
 </return>
-<msg time="2026-04-25T17:30:33.438215" level="INFO">${cantidad} = 18</msg>
+<msg time="2026-04-26T13:39:42.727786" level="INFO">${cantidad} = 18</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.433328" elapsed="0.004908"/>
+<status status="PASS" start="2026-04-26T13:39:42.722257" elapsed="0.005550"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.438335" elapsed="0.000271"/>
+<status status="PASS" start="2026-04-26T13:39:42.727913" elapsed="0.000288"/>
 </kw>
 <var name="${i}">18</var>
-<status status="PASS" start="2026-04-25T17:30:33.399846" elapsed="0.038799"/>
+<status status="PASS" start="2026-04-26T13:39:42.687304" elapsed="0.040939"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.439161" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.728766" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.439025" elapsed="0.033015"/>
+<status status="PASS" start="2026-04-26T13:39:42.728627" elapsed="0.032910"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.438844" elapsed="0.033350"/>
+<status status="PASS" start="2026-04-26T13:39:42.728445" elapsed="0.033207"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.478046" level="INFO">${resultado} = 19</msg>
+<msg time="2026-04-26T13:39:42.766619" level="INFO">${resultado} = 19</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.472822" elapsed="0.005267"/>
+<status status="PASS" start="2026-04-26T13:39:42.762100" elapsed="0.004551"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.478166" elapsed="0.000052"/>
+<status status="PASS" start="2026-04-26T13:39:42.766707" elapsed="0.000045"/>
 </return>
-<msg time="2026-04-25T17:30:33.478349" level="INFO">${cantidad} = 19</msg>
+<msg time="2026-04-26T13:39:42.766864" level="INFO">${cantidad} = 19</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.472449" elapsed="0.005923"/>
+<status status="PASS" start="2026-04-26T13:39:42.761845" elapsed="0.005040"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.478491" elapsed="0.000300"/>
+<status status="PASS" start="2026-04-26T13:39:42.766986" elapsed="0.000275"/>
 </kw>
 <var name="${i}">19</var>
-<status status="PASS" start="2026-04-25T17:30:33.438741" elapsed="0.040093"/>
+<status status="PASS" start="2026-04-26T13:39:42.728343" elapsed="0.038959"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.479414" level="INFO">Clicking button 'Add Element'.</msg>
+<msg time="2026-04-26T13:39:42.767835" level="INFO">Clicking button 'Add Element'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.479236" elapsed="0.029974"/>
+<status status="PASS" start="2026-04-26T13:39:42.767697" elapsed="0.031478"/>
 </kw>
 <arg>Add Element</arg>
-<status status="PASS" start="2026-04-25T17:30:33.479044" elapsed="0.030284"/>
+<status status="PASS" start="2026-04-26T13:39:42.767513" elapsed="0.031786"/>
 </kw>
 <kw name="Count by class" owner="Keywords">
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.514312" level="INFO">${resultado} = 20</msg>
+<msg time="2026-04-26T13:39:42.804596" level="INFO">${resultado} = 20</msg>
 <var>${resultado}</var>
 <arg>xpath://button[@class='${class}']</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.509789" elapsed="0.004557"/>
+<status status="PASS" start="2026-04-26T13:39:42.799869" elapsed="0.004761"/>
 </kw>
 <return>
 <value>${resultado}</value>
-<status status="PASS" start="2026-04-25T17:30:33.514412" elapsed="0.000049"/>
+<status status="PASS" start="2026-04-26T13:39:42.804690" elapsed="0.000047"/>
 </return>
-<msg time="2026-04-25T17:30:33.514579" level="INFO">${cantidad} = 20</msg>
+<msg time="2026-04-26T13:39:42.804850" level="INFO">${cantidad} = 20</msg>
 <var>${cantidad}</var>
 <arg>added-manually</arg>
-<status status="PASS" start="2026-04-25T17:30:33.509516" elapsed="0.005083"/>
+<status status="PASS" start="2026-04-26T13:39:42.799508" elapsed="0.005363"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${cantidad}</arg>
 <arg>${i}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.514704" elapsed="0.000296"/>
+<status status="PASS" start="2026-04-26T13:39:42.804973" elapsed="0.000288"/>
 </kw>
 <var name="${i}">20</var>
-<status status="PASS" start="2026-04-25T17:30:33.478935" elapsed="0.036104"/>
+<status status="PASS" start="2026-04-26T13:39:42.767402" elapsed="0.037899"/>
 </iter>
 <var>${i}</var>
 <value>1</value>
 <value>21</value>
-<status status="PASS" start="2026-04-25T17:30:32.715085" elapsed="0.800000"/>
+<status status="PASS" start="2026-04-26T13:39:42.004855" elapsed="0.800541"/>
 </for>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.516057" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.806462" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.515879" elapsed="0.041116"/>
+<status status="PASS" start="2026-04-26T13:39:42.806294" elapsed="0.057616"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.515638" elapsed="0.041494"/>
+<status status="PASS" start="2026-04-26T13:39:42.806000" elapsed="0.058027"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-25T17:30:33.515503" elapsed="0.041671"/>
+<status status="PASS" start="2026-04-26T13:39:42.805867" elapsed="0.058196"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.557931" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.864709" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.557717" elapsed="0.031629"/>
+<status status="PASS" start="2026-04-26T13:39:42.864545" elapsed="0.031747"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.557459" elapsed="0.032008"/>
+<status status="PASS" start="2026-04-26T13:39:42.864331" elapsed="0.032080"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-25T17:30:33.557311" elapsed="0.032198"/>
+<status status="PASS" start="2026-04-26T13:39:42.864194" elapsed="0.032259"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.590200" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.897137" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.590029" elapsed="0.033361"/>
+<status status="PASS" start="2026-04-26T13:39:42.896965" elapsed="0.032695"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.589792" elapsed="0.033721"/>
+<status status="PASS" start="2026-04-26T13:39:42.896731" elapsed="0.033051"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-25T17:30:33.589643" elapsed="0.033911"/>
+<status status="PASS" start="2026-04-26T13:39:42.896589" elapsed="0.033234"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.624287" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.930503" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.624117" elapsed="0.032335"/>
+<status status="PASS" start="2026-04-26T13:39:42.930334" elapsed="0.032402"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.623845" elapsed="0.032728"/>
+<status status="PASS" start="2026-04-26T13:39:42.930100" elapsed="0.032757"/>
 </kw>
 <var name="${i}">4</var>
-<status status="PASS" start="2026-04-25T17:30:33.623693" elapsed="0.032921"/>
+<status status="PASS" start="2026-04-26T13:39:42.929954" elapsed="0.032943"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.657300" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.963576" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.657133" elapsed="0.032658"/>
+<status status="PASS" start="2026-04-26T13:39:42.963408" elapsed="0.033906"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.656895" elapsed="0.033012"/>
+<status status="PASS" start="2026-04-26T13:39:42.963172" elapsed="0.034263"/>
 </kw>
 <var name="${i}">5</var>
-<status status="PASS" start="2026-04-25T17:30:33.656746" elapsed="0.033202"/>
+<status status="PASS" start="2026-04-26T13:39:42.963027" elapsed="0.034450"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.690637" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:42.998161" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.690465" elapsed="0.033753"/>
+<status status="PASS" start="2026-04-26T13:39:42.997990" elapsed="0.034123"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.690226" elapsed="0.034115"/>
+<status status="PASS" start="2026-04-26T13:39:42.997758" elapsed="0.034476"/>
 </kw>
 <var name="${i}">6</var>
-<status status="PASS" start="2026-04-25T17:30:33.690082" elapsed="0.034301"/>
+<status status="PASS" start="2026-04-26T13:39:42.997612" elapsed="0.034662"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.725165" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.032958" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.724973" elapsed="0.031918"/>
+<status status="PASS" start="2026-04-26T13:39:43.032792" elapsed="0.032566"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.724696" elapsed="0.032314"/>
+<status status="PASS" start="2026-04-26T13:39:43.032552" elapsed="0.032927"/>
 </kw>
 <var name="${i}">7</var>
-<status status="PASS" start="2026-04-25T17:30:33.724523" elapsed="0.032526"/>
+<status status="PASS" start="2026-04-26T13:39:43.032409" elapsed="0.033111"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.757731" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.066198" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.757564" elapsed="0.032476"/>
+<status status="PASS" start="2026-04-26T13:39:43.066027" elapsed="0.032167"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.757328" elapsed="0.032836"/>
+<status status="PASS" start="2026-04-26T13:39:43.065797" elapsed="0.032515"/>
 </kw>
 <var name="${i}">8</var>
-<status status="PASS" start="2026-04-25T17:30:33.757183" elapsed="0.033022"/>
+<status status="PASS" start="2026-04-26T13:39:43.065654" elapsed="0.032700"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.790902" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.099034" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.790735" elapsed="0.032671"/>
+<status status="PASS" start="2026-04-26T13:39:43.098865" elapsed="0.032243"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.790488" elapsed="0.033039"/>
+<status status="PASS" start="2026-04-26T13:39:43.098631" elapsed="0.032596"/>
 </kw>
 <var name="${i}">9</var>
-<status status="PASS" start="2026-04-25T17:30:33.790341" elapsed="0.033226"/>
+<status status="PASS" start="2026-04-26T13:39:43.098487" elapsed="0.032780"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.824269" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.131945" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.824098" elapsed="0.032869"/>
+<status status="PASS" start="2026-04-26T13:39:43.131777" elapsed="0.032164"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.823843" elapsed="0.033247"/>
+<status status="PASS" start="2026-04-26T13:39:43.131543" elapsed="0.032517"/>
 </kw>
 <var name="${i}">10</var>
-<status status="PASS" start="2026-04-25T17:30:33.823702" elapsed="0.033432"/>
+<status status="PASS" start="2026-04-26T13:39:43.131398" elapsed="0.032704"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.857844" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.164789" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.857673" elapsed="0.031742"/>
+<status status="PASS" start="2026-04-26T13:39:43.164619" elapsed="0.032438"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.857417" elapsed="0.032116"/>
+<status status="PASS" start="2026-04-26T13:39:43.164383" elapsed="0.032802"/>
 </kw>
 <var name="${i}">11</var>
-<status status="PASS" start="2026-04-25T17:30:33.857269" elapsed="0.032307"/>
+<status status="PASS" start="2026-04-26T13:39:43.164238" elapsed="0.032989"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.890262" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.197914" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.890092" elapsed="0.032891"/>
+<status status="PASS" start="2026-04-26T13:39:43.197746" elapsed="0.032791"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.889853" elapsed="0.033247"/>
+<status status="PASS" start="2026-04-26T13:39:43.197513" elapsed="0.033142"/>
 </kw>
 <var name="${i}">12</var>
-<status status="PASS" start="2026-04-25T17:30:33.889710" elapsed="0.033429"/>
+<status status="PASS" start="2026-04-26T13:39:43.197359" elapsed="0.033337"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.923826" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.231378" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.923654" elapsed="0.031689"/>
+<status status="PASS" start="2026-04-26T13:39:43.231208" elapsed="0.031663"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.923418" elapsed="0.032048"/>
+<status status="PASS" start="2026-04-26T13:39:43.230976" elapsed="0.032015"/>
 </kw>
 <var name="${i}">13</var>
-<status status="PASS" start="2026-04-25T17:30:33.923275" elapsed="0.032251"/>
+<status status="PASS" start="2026-04-26T13:39:43.230829" elapsed="0.032204"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.956256" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.263707" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.956085" elapsed="0.031615"/>
+<status status="PASS" start="2026-04-26T13:39:43.263540" elapsed="0.031163"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.955840" elapsed="0.032014"/>
+<status status="PASS" start="2026-04-26T13:39:43.263303" elapsed="0.031521"/>
 </kw>
 <var name="${i}">14</var>
-<status status="PASS" start="2026-04-25T17:30:33.955697" elapsed="0.032214"/>
+<status status="PASS" start="2026-04-26T13:39:43.263162" elapsed="0.031704"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:33.988765" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.295571" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:33.988558" elapsed="0.032727"/>
+<status status="PASS" start="2026-04-26T13:39:43.295397" elapsed="0.031299"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:33.988263" elapsed="0.033179"/>
+<status status="PASS" start="2026-04-26T13:39:43.295144" elapsed="0.031698"/>
 </kw>
 <var name="${i}">15</var>
-<status status="PASS" start="2026-04-25T17:30:33.988074" elapsed="0.033412"/>
+<status status="PASS" start="2026-04-26T13:39:43.294999" elapsed="0.031888"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.022170" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.327566" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.022001" elapsed="0.032212"/>
+<status status="PASS" start="2026-04-26T13:39:43.327397" elapsed="0.046692"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:34.021765" elapsed="0.032569"/>
+<status status="PASS" start="2026-04-26T13:39:43.327162" elapsed="0.047047"/>
 </kw>
 <var name="${i}">16</var>
-<status status="PASS" start="2026-04-25T17:30:34.021622" elapsed="0.032752"/>
+<status status="PASS" start="2026-04-26T13:39:43.327018" elapsed="0.047228"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.055056" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.374891" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.054886" elapsed="0.031107"/>
+<status status="PASS" start="2026-04-26T13:39:43.374733" elapsed="0.030828"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:34.054647" elapsed="0.031472"/>
+<status status="PASS" start="2026-04-26T13:39:43.374515" elapsed="0.031169"/>
 </kw>
 <var name="${i}">17</var>
-<status status="PASS" start="2026-04-25T17:30:34.054506" elapsed="0.031655"/>
+<status status="PASS" start="2026-04-26T13:39:43.374378" elapsed="0.031347"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.086847" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.406565" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.086677" elapsed="0.031847"/>
+<status status="PASS" start="2026-04-26T13:39:43.406374" elapsed="0.031537"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:34.086437" elapsed="0.032212"/>
+<status status="PASS" start="2026-04-26T13:39:43.406103" elapsed="0.031941"/>
 </kw>
 <var name="${i}">18</var>
-<status status="PASS" start="2026-04-25T17:30:34.086295" elapsed="0.032396"/>
+<status status="PASS" start="2026-04-26T13:39:43.405864" elapsed="0.032224"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.119368" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.438813" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.119201" elapsed="0.032711"/>
+<status status="PASS" start="2026-04-26T13:39:43.438634" elapsed="0.032025"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:34.118964" elapsed="0.033071"/>
+<status status="PASS" start="2026-04-26T13:39:43.438367" elapsed="0.032417"/>
 </kw>
 <var name="${i}">19</var>
-<status status="PASS" start="2026-04-25T17:30:34.118824" elapsed="0.033251"/>
+<status status="PASS" start="2026-04-26T13:39:43.438222" elapsed="0.032604"/>
 </iter>
 <iter>
 <kw name="Click button by name" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.152816" level="INFO">Clicking button 'Delete'.</msg>
+<msg time="2026-04-26T13:39:43.471514" level="INFO">Clicking button 'Delete'.</msg>
 <arg>${name}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.152635" elapsed="0.031961"/>
+<status status="PASS" start="2026-04-26T13:39:43.471344" elapsed="0.032632"/>
 </kw>
 <arg>Delete</arg>
-<status status="PASS" start="2026-04-25T17:30:34.152351" elapsed="0.032376"/>
+<status status="PASS" start="2026-04-26T13:39:43.471103" elapsed="0.032997"/>
 </kw>
 <var name="${i}">20</var>
-<status status="PASS" start="2026-04-25T17:30:34.152206" elapsed="0.032563"/>
+<status status="PASS" start="2026-04-26T13:39:43.470959" elapsed="0.033184"/>
 </iter>
 <var>${i}</var>
 <value>1</value>
 <value>21</value>
-<status status="PASS" start="2026-04-25T17:30:33.515306" elapsed="0.669510"/>
+<status status="PASS" start="2026-04-26T13:39:42.805657" elapsed="0.698534"/>
 </for>
 <kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:34.188919" level="INFO">Current page does not contain element 'xpath://button[@class='added-manually']'.</msg>
+<msg time="2026-04-26T13:39:43.509035" level="INFO">Current page does not contain element 'xpath://button[@class='added-manually']'.</msg>
 <arg>xpath://button[@class='added-manually']</arg>
 <doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.185092" elapsed="0.003887"/>
+<status status="PASS" start="2026-04-26T13:39:43.504465" elapsed="0.004672"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:30:34.189278" elapsed="2.104499"/>
+<status status="PASS" start="2026-04-26T13:39:43.509554" elapsed="2.095311"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:31.065298" elapsed="5.228706"/>
+<status status="PASS" start="2026-04-26T13:39:38.557270" elapsed="7.047904"/>
 </test>
 <test id="s1-t2" name="Basic auth con credenciales validas" line="32">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:36.295230" level="INFO">Opening browser 'chrome' to base url 'https://admin:admin@the-internet.herokuapp.com/basic_auth'.</msg>
+<msg time="2026-04-26T13:39:45.606491" level="INFO">Opening browser 'chrome' to base url 'https://admin:admin@the-internet.herokuapp.com/basic_auth'.</msg>
 <arg>https://${VALID-USER}:${VALID-PSW}@${URL-BASIC-AUTH}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:36.294937" elapsed="1.762345"/>
+<status status="PASS" start="2026-04-26T13:39:45.606149" elapsed="2.213844"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:38.067295" level="INFO">Current page contains text 'Congratulations'.</msg>
+<msg time="2026-04-26T13:39:47.829327" level="INFO">Current page contains text 'Congratulations'.</msg>
 <arg>Congratulations</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-25T17:30:38.057613" elapsed="0.009787"/>
+<status status="PASS" start="2026-04-26T13:39:47.820299" elapsed="0.009160"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:30:38.067790" elapsed="2.104767"/>
+<status status="PASS" start="2026-04-26T13:39:47.829895" elapsed="2.109463"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:36.294554" elapsed="3.878249"/>
+<status status="PASS" start="2026-04-26T13:39:45.605685" elapsed="4.333925"/>
 </test>
 <test id="s1-t3" name="Basic auth con credenciales invalidas" line="38">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:40.173928" level="INFO">Opening browser 'chrome' to base url 'https://admin1:admin1@the-internet.herokuapp.com/basic_auth'.</msg>
+<msg time="2026-04-26T13:39:49.940593" level="INFO">Opening browser 'chrome' to base url 'https://admin1:admin1@the-internet.herokuapp.com/basic_auth'.</msg>
 <arg>https://${INVALID-USER}:${INVALID-PSW}@${URL-BASIC-AUTH}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:40.173644" elapsed="1.600249"/>
+<status status="PASS" start="2026-04-26T13:39:49.940341" elapsed="1.602123"/>
 </kw>
 <kw name="Page Should Not Contain" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:41.794316" level="INFO">Current page does not contain text 'Congratulations'.</msg>
+<msg time="2026-04-26T13:39:51.561075" level="INFO">Current page does not contain text 'Congratulations'.</msg>
 <arg>Congratulations</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<status status="PASS" start="2026-04-25T17:30:41.774234" elapsed="0.020161"/>
+<status status="PASS" start="2026-04-26T13:39:51.542876" elapsed="0.018325"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:30:41.794767" elapsed="2.107835"/>
+<status status="PASS" start="2026-04-26T13:39:51.561758" elapsed="2.101244"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:40.173262" elapsed="3.729583"/>
+<status status="PASS" start="2026-04-26T13:39:49.940017" elapsed="3.723289"/>
 </test>
 <test id="s1-t4" name="Select checkboxes" line="46">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:43.903746" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<msg time="2026-04-26T13:39:53.664365" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
 <arg>${URL-CHECKBOXES}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:43.903525" elapsed="2.194519"/>
+<status status="PASS" start="2026-04-26T13:39:53.664095" elapsed="2.133006"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:46.098645" level="INFO">Selecting checkbox 'xpath://form[@id='checkboxes']/input[1]'.</msg>
+<msg time="2026-04-26T13:39:55.797612" level="INFO">Selecting checkbox 'xpath://form[@id='checkboxes']/input[1]'.</msg>
 <arg>xpath://form[@id='checkboxes']/input[1]</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:46.098405" elapsed="0.058522"/>
+<status status="PASS" start="2026-04-26T13:39:55.797400" elapsed="0.115540"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:46.157523" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[1]' is selected.</msg>
+<msg time="2026-04-26T13:39:55.913563" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[1]' is selected.</msg>
 <arg>xpath://form[@id='checkboxes']/input[1]</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-04-25T17:30:46.157294" elapsed="0.012657"/>
+<status status="PASS" start="2026-04-26T13:39:55.913276" elapsed="0.012751"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:46.170444" level="INFO">Selecting checkbox 'xpath://form[@id='checkboxes']/input[2]'.</msg>
+<msg time="2026-04-26T13:39:55.926536" level="INFO">Selecting checkbox 'xpath://form[@id='checkboxes']/input[2]'.</msg>
 <arg>xpath://form[@id='checkboxes']/input[2]</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:46.170229" elapsed="0.016321"/>
+<status status="PASS" start="2026-04-26T13:39:55.926325" elapsed="0.015476"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:46.187057" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[2]' is selected.</msg>
+<msg time="2026-04-26T13:39:55.942317" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[2]' is selected.</msg>
 <arg>xpath://form[@id='checkboxes']/input[2]</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-04-25T17:30:46.186845" elapsed="0.013345"/>
+<status status="PASS" start="2026-04-26T13:39:55.942101" elapsed="0.012561"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:30:46.200589" elapsed="2.102971"/>
+<status status="PASS" start="2026-04-26T13:39:55.955201" elapsed="2.088080"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:43.903217" elapsed="4.400615"/>
+<status status="PASS" start="2026-04-26T13:39:53.663689" elapsed="4.379890"/>
 </test>
 <test id="s1-t5" name="Context menu" line="59">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:48.304865" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
+<msg time="2026-04-26T13:39:58.045994" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
 <arg>${URL-CONTEXT-MENU}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:48.304656" elapsed="2.127746"/>
+<status status="PASS" start="2026-04-26T13:39:58.045794" elapsed="2.270687"/>
 </kw>
 <kw name="Open Context Menu" owner="SeleniumLibrary">
 <arg>id:hot-spot</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T17:30:50.432711" elapsed="0.297956"/>
+<status status="PASS" start="2026-04-26T13:40:00.316792" elapsed="0.282260"/>
 </kw>
 <kw name="Alert Should Be Present" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:50.731173" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2026-04-26T13:40:00.599502" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>You selected a context menu</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<status status="PASS" start="2026-04-25T17:30:50.731000" elapsed="0.003237"/>
+<status status="PASS" start="2026-04-26T13:40:00.599349" elapsed="0.002607"/>
 </kw>
 <kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
 <doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2026-04-25T17:30:50.734509" elapsed="5.029105"/>
+<status status="PASS" start="2026-04-26T13:40:00.602209" elapsed="5.033606"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:30:55.763976" elapsed="2.115276"/>
+<status status="PASS" start="2026-04-26T13:40:05.636299" elapsed="2.112055"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:48.304361" elapsed="9.575151"/>
+<status status="PASS" start="2026-04-26T13:39:58.045500" elapsed="9.703175"/>
 </test>
 <test id="s1-t6" name="Disappearing elements" line="71">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:30:57.880479" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/disappearing_elements'.</msg>
+<msg time="2026-04-26T13:40:07.749838" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/disappearing_elements'.</msg>
 <arg>${URL-DISAPPEARING-ELEMENTS}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T17:30:57.880259" elapsed="2.235939"/>
+<status status="PASS" start="2026-04-26T13:40:07.749588" elapsed="2.342073"/>
 </kw>
 <while condition="${TRUE}">
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:31:00.125939" level="INFO">Current page contains element 'xpath://a[text()='Gallery']'.</msg>
+<msg time="2026-04-26T13:40:10.100758" level="INFO">Current page contains element 'xpath://a[text()='Gallery']'.</msg>
 <arg>xpath://a[text()='Gallery']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2026-04-25T17:31:00.117217" elapsed="0.008823"/>
+<status status="PASS" start="2026-04-26T13:40:10.092692" elapsed="0.008210"/>
 </kw>
-<msg time="2026-04-25T17:31:00.126183" level="INFO">${galery} = True</msg>
+<msg time="2026-04-26T13:40:10.101072" level="INFO">${galery} = True</msg>
 <var>${galery}</var>
 <arg>Page Should Contain Element</arg>
 <arg>xpath://a[text()='Gallery']</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-25T17:31:00.116830" elapsed="0.009376"/>
+<status status="PASS" start="2026-04-26T13:40:10.092294" elapsed="0.008802"/>
 </kw>
 <if>
 <branch type="IF" condition="${galery}">
 <break>
-<status status="PASS" start="2026-04-25T17:31:00.126419" elapsed="0.000045"/>
+<status status="PASS" start="2026-04-26T13:40:10.101319" elapsed="0.000052"/>
 </break>
-<status status="PASS" start="2026-04-25T17:31:00.126324" elapsed="0.000178"/>
+<status status="PASS" start="2026-04-26T13:40:10.101217" elapsed="0.000214"/>
 </branch>
 <branch type="ELSE">
 <kw name="Reload Page" owner="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="NOT RUN" start="2026-04-25T17:31:00.126643" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-26T13:40:10.101598" elapsed="0.000026"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-04-25T17:31:00.126736" elapsed="0.000020"/>
+<status status="NOT RUN" start="2026-04-26T13:40:10.101725" elapsed="0.000024"/>
 </kw>
-<status status="NOT RUN" start="2026-04-25T17:31:00.126534" elapsed="0.000250"/>
+<status status="NOT RUN" start="2026-04-26T13:40:10.101475" elapsed="0.000305"/>
 </branch>
-<status status="PASS" start="2026-04-25T17:31:00.126290" elapsed="0.000521"/>
+<status status="PASS" start="2026-04-26T13:40:10.101180" elapsed="0.000628"/>
 </if>
-<status status="PASS" start="2026-04-25T17:31:00.116446" elapsed="0.010393"/>
+<status status="PASS" start="2026-04-26T13:40:10.091910" elapsed="0.009928"/>
 </iter>
-<status status="PASS" start="2026-04-25T17:31:00.116444" elapsed="0.010443"/>
+<status status="PASS" start="2026-04-26T13:40:10.091908" elapsed="0.009969"/>
 </while>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-25T17:31:00.137429" level="INFO">Element 'xpath://a[text()='Gallery']' is displayed.</msg>
+<msg time="2026-04-26T13:40:10.112029" level="INFO">Element 'xpath://a[text()='Gallery']' is displayed.</msg>
 <arg>xpath://a[text()='Gallery']</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-25T17:31:00.127083" elapsed="0.010468"/>
+<status status="PASS" start="2026-04-26T13:40:10.102106" elapsed="0.010059"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T17:31:00.137948" elapsed="2.109901"/>
+<status status="PASS" start="2026-04-26T13:40:10.112534" elapsed="2.103653"/>
 </kw>
-<status status="PASS" start="2026-04-25T17:30:57.879923" elapsed="4.368183"/>
+<status status="PASS" start="2026-04-26T13:40:07.749182" elapsed="4.467346"/>
 </test>
-<status status="PASS" start="2026-04-25T17:30:30.870574" elapsed="31.378055"/>
+<test id="s1-t7" name="Drag and drop" line="90">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:12.217680" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
+<arg>${URL-DRAG-N-DROP}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:12.217435" elapsed="2.193845"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:column-a</arg>
+<arg>id:column-b</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-04-26T13:40:14.411583" elapsed="0.556405"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:14.968640" level="INFO">Verifying element 'id:column-a' contains exact text 'B'.</msg>
+<arg>id:column-a</arg>
+<arg>B</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-26T13:40:14.968375" elapsed="0.013026"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:column-b</arg>
+<arg>id:column-a</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-04-26T13:40:14.981687" elapsed="0.536981"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:15.519351" level="INFO">Verifying element 'id:column-a' contains exact text 'A'.</msg>
+<arg>id:column-a</arg>
+<arg>A</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-26T13:40:15.519079" elapsed="0.008956"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:15.528433" elapsed="2.100210"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:12.217044" elapsed="5.411849"/>
+</test>
+<test id="s1-t8" name="Dynamic controls" line="98">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:17.629958" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/dynamic_controls'.</msg>
+<arg>${URL-DYNAMIC-CONTROLS}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:17.629752" elapsed="2.193850"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:19.824170" level="INFO">Clicking button 'xpath://button[text()='Remove']'.</msg>
+<arg>xpath://button[text()='Remove']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:19.823920" elapsed="0.058148"/>
+</kw>
+<kw name="Validar elemento no visible" owner="Keywords">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-04-26T13:40:19.882664" elapsed="3.155442"/>
+</kw>
+<arg>id:checkbox</arg>
+<status status="PASS" start="2026-04-26T13:40:19.882410" elapsed="3.155807"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:23.038637" level="INFO">Clicking button 'xpath://button[text()='Enable']'.</msg>
+<arg>xpath://button[text()='Enable']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:23.038449" elapsed="0.041762"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath://input[@type='text']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-04-26T13:40:23.080510" elapsed="3.148412"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:26.229271" elapsed="2.106089"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:17.629366" elapsed="10.706315"/>
+</test>
+<test id="s1-t9" name="Floating menu" line="106">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:28.336749" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/floating_menu'.</msg>
+<arg>${URL-FLOATING-MENU}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:28.336496" elapsed="2.242108"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:30.579314" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-26T13:40:30.578929" elapsed="0.004224"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:30.597763" level="INFO">Element 'id:menu' is displayed.</msg>
+<arg>id:menu</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-26T13:40:30.583433" elapsed="0.014461"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:30.598271" elapsed="2.108609"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:28.336125" elapsed="4.371093"/>
+</test>
+<test id="s1-t10" name="Login exitoso y logout" line="112">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:32.708473" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL-AUTH-FORM}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:32.708201" elapsed="2.290175"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:34.998978" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:34.998708" elapsed="0.055644"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:35.054921" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.054696" elapsed="0.044301"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:35.099489" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.099287" elapsed="0.244586"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.344177" elapsed="0.007647"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:35.352390" level="INFO">Clicking element 'xpath://a[@href='/logout']'.</msg>
+<arg>xpath://a[@href='/logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.352148" elapsed="0.227371"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged out of the secure area!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.579812" elapsed="0.007476"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:35.587650" elapsed="2.107103"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:32.707785" elapsed="4.987271"/>
+</test>
+<test id="s1-t11" name="Login invalido" line="122">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:37.696312" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL-AUTH-FORM}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:37.696063" elapsed="2.305722"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.002331" level="INFO">Typing text 'tomsmith1' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>tomsmith1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.002095" elapsed="0.057177"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.059800" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.059600" elapsed="0.044412"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.104498" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.104297" elapsed="0.258780"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your username is invalid!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.363380" elapsed="0.007958"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.371892" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.371674" elapsed="0.039065"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.411323" level="INFO">Typing text 'SuperS1ecretPassword!' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>SuperS1ecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.411058" elapsed="0.049040"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:40.460672" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.460451" elapsed="0.043234"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your password is invalid!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.504021" elapsed="0.212797"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:40.717411" elapsed="2.117490"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:37.695690" elapsed="5.139521"/>
+</test>
+<test id="s1-t12" name="Key presses" line="135">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:42.836267" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<arg>${URL-PRESSED-KEYS}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-26T13:40:42.836021" elapsed="2.112436"/>
+</kw>
+<kw name="Presionar tecla" owner="Keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:44.949719" level="INFO">Sending key(s) ('ESCAPE',) to id:target element.</msg>
+<msg time="2026-04-26T13:40:45.241601" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2026-04-26T13:40:45.241711" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>id:target</arg>
+<arg>${key}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:44.949253" elapsed="0.297360"/>
+</kw>
+<arg>ESCAPE</arg>
+<status status="PASS" start="2026-04-26T13:40:44.948889" elapsed="0.297839"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:45.247200" level="INFO">Verifying element 'id:result' contains exact text 'You entered: ESCAPE'.</msg>
+<arg>id:result</arg>
+<arg>You entered: ESCAPE</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-26T13:40:45.246977" elapsed="0.015355"/>
+</kw>
+<kw name="Presionar tecla" owner="Keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:45.263294" level="INFO">Sending key(s) ('SPACE',) to id:target element.</msg>
+<msg time="2026-04-26T13:40:45.539246" level="INFO">Pressing special key SPACE to element.</msg>
+<msg time="2026-04-26T13:40:45.539354" level="INFO">Releasing special key SPACE.</msg>
+<arg>id:target</arg>
+<arg>${key}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:45.262971" elapsed="0.280238"/>
+</kw>
+<arg>SPACE</arg>
+<status status="PASS" start="2026-04-26T13:40:45.262699" elapsed="0.280676"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-26T13:40:45.543842" level="INFO">Verifying element 'id:result' contains exact text 'You entered: SPACE'.</msg>
+<arg>id:result</arg>
+<arg>You entered: SPACE</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-26T13:40:45.543648" elapsed="0.007387"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-26T13:40:45.551359" elapsed="2.094703"/>
+</kw>
+<status status="PASS" start="2026-04-26T13:40:42.835655" elapsed="4.810652"/>
+</test>
+<status status="PASS" start="2026-04-26T13:39:38.295495" elapsed="69.351475"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0" skip="0">All Tests</stat>
+<stat pass="12" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Pruebas" id="s1" pass="6" fail="0" skip="0">Pruebas</stat>
+<stat name="Pruebas" id="s1" pass="12" fail="0" skip="0">Pruebas</stat>
 </suite>
 </statistics>
 <errors>
